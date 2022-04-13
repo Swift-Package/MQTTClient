@@ -77,7 +77,8 @@ DDLogLevelVerbose   = (DDLogLevelDebug   | DDLogFlagVerbose),
 DDLogLevelAll       = NSUIntegerMax
 };
 
-#ifdef DEBUG
+#ifdef DEBUGG
+//#ifdef DEBUG
 
 #define DDLogVerbose if (ddLogLevel & DDLogFlagVerbose) NSLog
 #define DDLogDebug if (ddLogLevel & DDLogFlagDebug) NSLog
